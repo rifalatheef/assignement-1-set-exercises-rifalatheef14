@@ -1,0 +1,18 @@
+/* Full screen centered layout */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Optional: background for contrast */
+  }
+  
+  /* Style for the video container */
+  .video-container video {
+    max-width: 90%;
+    max-height: 90vh;
+    display: block;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+  }
