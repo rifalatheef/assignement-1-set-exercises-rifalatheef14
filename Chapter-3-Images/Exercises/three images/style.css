@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+  }
+  
+  img {
+    margin: 20px;
+    border-radius: 12px;
+    filter: contrast(110%) grayscale(20%) brightness(105%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .caption {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  a {
+    color: #2a6f97;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
