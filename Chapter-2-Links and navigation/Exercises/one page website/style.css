@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .navbar {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .navbar a {
+    color: #eee;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar .btn {
+    background-color: #4CAF50;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .section h1, .section h2 {
+    color: #005f73;
+  }
+  
