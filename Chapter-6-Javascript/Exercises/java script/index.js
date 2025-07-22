@@ -1,4 +1,3 @@
-// jss for the petrol calculator
 window.onload = () => {
     const inputs = document.querySelectorAll("input");
 
