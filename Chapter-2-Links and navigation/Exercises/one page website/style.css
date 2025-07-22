@@ -1,38 +1,102 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fef6ff;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #a29bfe;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #6c5ce7;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: white;
+  width: 0;
+  transition: width 0.3s;
+  margin: auto;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar .btn {
+  background-color: #fd79a8;
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar .btn:hover {
+  background-color: #e84393;
+}
+
+/* Section Styling */
+.section {
+  padding: 50px 25px;
+  background-color: #fff;
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section:nth-child(even) {
+  background-color: #f0f4ff;
+}
+
+.section h1,
+.section h2 {
+  color: #6c5ce7;
+  margin-bottom: 20px;
+}
+
+.section p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
   .navbar {
-    background-color: #222;
-    padding: 10px;
-    text-align: center;
+    flex-direction: column;
   }
-  
-  .navbar a {
-    color: #eee;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
+
+  .navbar a,
   .navbar .btn {
-    background-color: #4CAF50;
-    padding: 8px 12px;
-    border-radius: 4px;
-    color: white;
-    text-decoration: none;
+    margin: 10px 0;
   }
-  
+
   .section {
-    padding: 40px 20px;
-    border-bottom: 1px solid #ccc;
+    padding: 30px 15px;
   }
-  
-  .section h1, .section h2 {
-    color: #005f73;
-  }
-  
+}
